@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href='main.css'>
+</head>
+<body>
+    <div class="container" style="margin-right: 150px;">
+        <h1 class="label">User Login</h1>
+        <form class="login_form" action="home.html" method="POST" name="login_form" onsubmit="return validated()">
+            <div class="font">Email or Phone</div>
+            <input autocomplete="off" type="text" name="email">
+            <div id="email_error">*Required</div>
+            <div class="font font2">Password</div>
+            <input type="password" name="password">
+            <div id="pass_error">*Required</div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
